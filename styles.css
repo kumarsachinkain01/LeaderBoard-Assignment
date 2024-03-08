@@ -1,0 +1,96 @@
+/* Resetting default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #161313;
+}
+
+section {
+    width: 80%;
+    margin: 50px auto;
+}
+
+.section1 {
+    background-color: #3158da;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+input[type="text"],
+input[type="number"],
+button {
+    padding: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #fffbfb;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #1bcc0b;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2acf09;
+}
+
+.section2 {
+    margin-top: 30px;
+}
+
+.section2 div {
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section2 div span {
+    flex-basis: 20%;
+}
+
+.section2 div i {
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    section {
+        width: 90%;
+    }
+}
+
+@media (max-width: 576px) {
+    input[type="text"],
+    input[type="number"],
+    button {
+        width: 100%;
+        margin-right: 0;
+    }
+}
